@@ -1,3 +1,6 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Teko:wght@300;400;700&display=swap');
+
 :root {
   --primary-color: #ffc500;
   --secondary-color: #eaae00;
@@ -11,6 +14,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Teko', sans-serif;
 }
 
   header{
@@ -103,24 +107,19 @@
   }
 
   .card-redes{
-    padding: 10px;
+    padding: 15px;
     gap: 10px;
     display: flex;
     background-color: white;
-    border: 2px solid white;
-    height: 10px;
-  }
-
-  .card-redes{
+    border-radius: 5px;
+    height: 40px;
     justify-content: center;
     align-items: center;
-    
-    gap: 5px;
-    height: 40px;
   }
 
+ 
   h3, p {
-    color: white;
+    color: rgb(255, 255, 255);
     text-align: center;
   }
 
@@ -128,9 +127,67 @@
     width: 50%;
   }
   
-  /*DESAFIO
-  Estilizar o card igual e layout
-  Se ficar igual, pode criar os demais cards
-  
+  .img-redes:hover{
+    scale: 1.2;
+  }
+
+  footer{
+    background-color: var(--dark-color);
+   display: flex;
+   padding: var(--espacamento);
+  }
+
+  .footer-col1{
+    width: 40%;
+    display: flex;
+    justify-content:  space-around;
     
+  }
+  .footer-col2{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    text-align: right;
+    color: white;
+    font-size: 18px;
   
+  }
+
+  .link {
+    color:white;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+  
+  .link ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+
+  .link ul li a{
+    text-decoration: none;
+    color:white;
+  }
+
+  .link ul li a:hover{
+    color: var(--third-color);
+  }
+
+  .footer-redes{
+    gap: 10px;
+    display: flex;
+    border-radius: 5px;
+    height: 40px;
+    justify-content: right;
+    align-items: center;
+  }
+
+  .footer-text{
+    text-align: right;
+  }
